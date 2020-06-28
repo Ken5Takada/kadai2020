@@ -9,9 +9,9 @@
 <input type="button" value="こたえ" id="hus_button">
 <script type="text/javascript">
 document.getElementById("hus_button").onclick = f;
-    
+
     function f(){
-        
+
         var word = "bottles";
 var count = 99;
 while (count > 0) {
@@ -25,10 +25,16 @@ while (count > 0) {
         var word = "bottle"
       }
         console.log("Take one down and pass it around," + " " + count + " " + word + " of beer on the wall.");
+        console.log(" ");
     } else {
       if (count < 1){
         var word = "bottles"
       }
+      if (count == 0){
+        var word = "bottles"
+      }
+        console.log("Take one down and pass it around, no more bottles of beer on the wall.");
+        console.log(" ");
         console.log("No more " + word + " of beer on the wall," + " no more" + " " + word + " of beer.");
         console.log("Go to the store and buy some more, 99 bottles of beer on the wall.")
     }
